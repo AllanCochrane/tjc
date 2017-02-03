@@ -1,0 +1,1 @@
+json.array! @lesson_steps, partial: 'lesson_steps/lesson_step', as: :lesson_step

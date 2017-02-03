@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Lesson:</strong>
+  <%= @lesson_step.lesson %>
+</p>
+
+<p>
+  <strong>Text:</strong>
+  <%= @lesson_step.text %>
+</p>
+
+<p>
+  <strong>Media type:</strong>
+  <%= @lesson_step.media_type %>
+</p>
+
+<p>
+  <strong>File path:</strong>
+  <%= @lesson_step.file_path %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @lesson_step.description %>
+</p>
+
+<%= link_to 'Edit', edit_lesson_step_path(@lesson_step) %> |
+<%= link_to 'Back', lesson_steps_path %>

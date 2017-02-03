@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Lesson Steps</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Lesson</th>
+      <th>Text</th>
+      <th>Media type</th>
+      <th>File path</th>
+      <th>Description</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @lesson_steps.each do |lesson_step| %>
+      <tr>
+        <td><%= lesson_step.lesson %></td>
+        <td><%= lesson_step.text %></td>
+        <td><%= lesson_step.media_type %></td>
+        <td><%= lesson_step.file_path %></td>
+        <td><%= lesson_step.description %></td>
+        <td><%= link_to 'Show', lesson_step %></td>
+        <td><%= link_to 'Edit', edit_lesson_step_path(lesson_step) %></td>
+        <td><%= link_to 'Destroy', lesson_step, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Lesson Step', new_lesson_step_path %>

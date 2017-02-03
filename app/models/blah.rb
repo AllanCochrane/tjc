@@ -1,0 +1,2 @@
+class Blah < ApplicationRecord
+end
