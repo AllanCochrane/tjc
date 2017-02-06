@@ -3,11 +3,11 @@
 one:
   title: MyString
   author: one
-  lesson: one
+  title: one
   status: MyString
 
 two:
   title: MyString
   author: two
-  lesson: two
+  title: two
   status: MyString
