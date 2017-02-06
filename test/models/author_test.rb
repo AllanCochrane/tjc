@@ -10,4 +10,9 @@ class AuthorTest < ActiveSupport::TestCase
     author = Author.new
     assert_not author.save
   end
+  
+  test "should save author with name" do
+    author = Author.new(name:'foo')
+    assert author.save
+  end
 end
