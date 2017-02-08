@@ -16,4 +16,5 @@ class Lesson < ApplicationRecord
   belongs_to :course
   
   validates_presence_of :title
+  validates :status, inclusion: ["In Progress", "Released", "Awaiting Approval", "Rejected"]
 end
