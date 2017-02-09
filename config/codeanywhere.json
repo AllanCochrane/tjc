@@ -1,0 +1,40 @@
+{
+	"comment": "This is the Codeanywhere config for the project",
+	"run": [
+		{
+			"name": "default",
+			"default": "true",
+			
+			//	current working dir
+			"cwd": "~/workspace/tjc",
+			
+			//	run commands list
+			//	example: 
+			//		"rails server"
+			"commands": [
+				"rails server --binding=0.0.0.0"
+			],
+			
+			//	environment variables
+			//	example: 
+			//		"PORT": "3000"
+			"environment": {
+				"PORT": "3000"
+			},
+			
+			//	if "preview" is set, it will open the link in a 
+			//	preview panel after setting environment variables 
+			//	and all commands have been executed
+			"preview": {
+				"url": "http://{{DOMAIN}}:{{PORT}}/",
+				"type": "external"
+			}
+		}
+	],
+	"find_in_files": {
+		"ignore": [
+			//	file types to ignore in search
+			".git", ".svn"
+		]
+	}
+}
